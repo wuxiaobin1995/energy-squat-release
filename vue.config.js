@@ -1,9 +1,10 @@
 /*
  * @Author      : 吴晓斌
  * @Date        : 2020-10-16 11:06:19
- * @LastEditTime: 2022-03-09 11:11:52
+ * @LastEditTime: 2022-12-06 10:39:34
  * @Description : vue.config.js
  */
+
 module.exports = {
   pluginOptions: {
     electronBuilder: {
@@ -34,8 +35,9 @@ module.exports = {
         },
         nsis: {
           oneClick: false, // 是否一键安装
+          perMachine: true, // 是否总是针对所有用户（每台机器）进行安装
           allowElevation: true, // 允许请求提升。如果为false，则用户必须使用提升的权限重新启动安装程序
-          allowToChangeInstallationDirectory: true, // 允许修改安装目录
+          allowToChangeInstallationDirectory: false, // 允许修改安装目录
           installerIcon: './public/logo.ico', // 安装图标
           uninstallerIcon: './public/delete.ico', // 卸载图标
           installerHeaderIcon: './public/logo.ico', // 安装时头部图标
