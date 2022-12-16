@@ -1,7 +1,7 @@
 /*
  * @Author      : 吴晓斌
  * @Date        : 2020-10-16 09:37:59
- * @LastEditTime: 2021-10-19 10:00:16
+ * @LastEditTime: 2022-12-16 10:42:25
  * @Description : 路由
  */
 import Vue from 'vue'
@@ -40,6 +40,13 @@ const routes = [
     path: '/data-record',
     name: 'data-record',
     component: () => import('@/views/data-record/index.vue')
+  },
+
+  // 数据迁移
+  {
+    path: '/data-migration',
+    name: 'data-migration',
+    component: () => import('@/views/data-migration/index.vue')
   },
 
   {

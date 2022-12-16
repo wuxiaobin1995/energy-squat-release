@@ -1,7 +1,7 @@
 <!--
  * @Author      : 吴晓斌
  * @Date        : 2020-10-16 09:37:59
- * @LastEditTime: 2021-10-19 09:59:53
+ * @LastEditTime: 2022-12-16 10:59:11
  * @Description : 根组件
 -->
 <template>
@@ -28,6 +28,10 @@
         <el-menu-item index="/data-record">
           <i class="el-icon-date"></i>
           <span>数 据 查 看 页</span>
+        </el-menu-item>
+        <el-menu-item index="/data-migration">
+          <i class="el-icon-s-data"></i>
+          <span>数 据 迁 移</span>
         </el-menu-item>
         <el-menu-item>
           <el-button icon="el-icon-refresh" @click="handleRefresh" plain round
