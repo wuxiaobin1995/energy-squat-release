@@ -1,7 +1,7 @@
 <!--
  * @Author      : 吴晓斌
  * @Date        : 2020-09-11 15:49:43
- * @LastEditTime: 2023-06-26 11:37:05
+ * @LastEditTime: 2023-07-24 17:29:35
  * @Description : 普通模式
 -->
 <template>
@@ -312,10 +312,10 @@ export default {
   },
 
   created() {
+    this.getLocalStorageData() // 获取loaclStorage的数据
     this.initSerialPort() // 初始化SerialPort串口
     this.getUserData() // 获取user表数据
     this.getActionData() // 获取action表数据
-    this.getLocalStorageData() // 获取loaclStorage的数据
     this.initDll() // 初始化dll实例
     /* 计算最终负重值 */
     this.countTrainWeight()
@@ -684,7 +684,7 @@ export default {
             }, 100)
           } else {
             this.$notify({
-              title: 'dll初始化端口失败',
+              title: 'dll初始化端口失败【COM口不能超过2位数】',
               message: '请重新连接USB线，然后刷新页面或重启设备',
               type: 'error',
               position: 'bottom-left'
