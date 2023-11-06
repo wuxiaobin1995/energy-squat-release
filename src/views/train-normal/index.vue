@@ -1,7 +1,7 @@
 <!--
  * @Author      : 吴晓斌
  * @Date        : 2020-09-11 15:49:43
- * @LastEditTime: 2023-07-24 17:29:35
+ * @LastEditTime: 2023-11-06 16:49:46
  * @Description : 普通模式
 -->
 <template>
@@ -811,7 +811,6 @@ export default {
       const L3 = 0.8
       const L4 = 0.73
       const L5 = 0.12
-      // const L6 = 1.7
       this.recordData.trainWeight = parseFloat(
         (
           ((L4 + L5) / L4) *
